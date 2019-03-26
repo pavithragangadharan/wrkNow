@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".help">
+
+    <TextView
+        android:id="@+id/primetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="150dp"
+        android:text="PRIMALITY TEST"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/primelink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="68dp"
+        android:autoLink="web"
+        android:text="https://en.wikipedia.org/wiki/Primality_test"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/primetext" />
+
+    <TextView
+        android:id="@+id/wilsonhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="147dp"
+        android:text="Wilson Method"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/primelink" />
+
+    <TextView
+        android:id="@+id/wilsonlink"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="40dp"
+        android:autoLink="web"
+        android:text="https://en.wikipedia.org/wiki/Wilson%27s_theorem"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wilsonhelp" />
+
+    <TextView
+        android:id="@+id/fERMATHELP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="123dp"
+        android:text="FERMAT LITTLE METHOD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wilsonlink" />
+
+    <TextView
+        android:id="@+id/FLINK"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="42dp"
+        android:autoLink="web"
+        android:text="https://en.wikipedia.org/wiki/Fermat_primality_test"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fERMATHELP" />
+
+    <TextView
+        android:id="@+id/MILINK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="130dp"
+        android:text="MILLER RABIN METHOD"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FLINK" />
+
+    <TextView
+        android:id="@+id/MLINK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:autoLink="web"
+        android:text="https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MILINK" />
+
+    <Button
+        android:id="@+id/BACK"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="84dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MLINK" />
+</android.support.constraint.ConstraintLayout>
